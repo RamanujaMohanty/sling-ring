@@ -1,20 +1,22 @@
 # Sling Ring
-Gesture-Controlled Robotic Gripper for Hazardous and Clean Environments
+**Gesture-Controlled Robotic Gripper for Hazardous and Clean Environments**
 
 ---
 
 ## Developers
-| Name | Email | GitHub |
-|------|-------|--------|
-| Ramanuja Mohanty | ramanuja.mohanty@gmail.com | @RamanujaMohanty |
-| Thamizarasu Sankara | thamizarasus@gmail.com | @thamizarasus |
-| David Lei | DavidtheDefender2003@gmail.com | @CaliCanine |
+
+| Name                | Email                          | GitHub           |
+|---------------------|--------------------------------|------------------|
+| Ramanuja Mohanty    | ramanuja.mohanty@gmail.com     | @RamanujaMohanty |
+| Thamizarasu Sankara | thamizarasus@gmail.com         | @thamizarasus    |
+| David Lei           | DavidtheDefender2003@gmail.com | @CaliCanine      |
+
 
 ---
 
 ## Project Summary
-Sling Ring is a compact robotic gripper controlled through natural hand gestures. 
-A wrist-mounted IMU (accelerometer + gyroscope) detects tilt and motion to open and 
+Sling Ring is a compact robotic gripper controlled through natural hand gestures.
+A wrist-mounted IMU (accelerometer + gyroscope) detects tilt and motion to open and
 close the gripper without physical contact.
 
 This system is designed for use in environments where:
@@ -31,8 +33,8 @@ The device also includes:
 ---
 
 ## Key Features
-- Gesture-based control using IMU (tilt to open/close)
-- Touch-free operation reduces contamination
+- Gesture-based control using IMU (Wrist Tilt to Open/Close)
+- Touch-free operation for reduction of contamination & increased safety.
 - Hardware-based safety (limit switches + E-stop)
 - Modular integration for different robotic applications
 - Fully functional with a wired fallback control mode
@@ -40,23 +42,28 @@ The device also includes:
 ---
 
 ## Hardware & Components
-- Arduino UNO R4 + Grove Base Shield
-- MPU6050 IMU (Accelerometer + Gyroscope)
-- DG01D Mini Gearmotor
-- TB6612FNG or L298N H-Bridge Motor Driver
-- Grove Buttons and LEDs for input and feedback
-- 3D-Printed Mechanical Gripper
+- 1 x USB C-C Cable (Power/Data Transmission)
+- 1 x Arduino Uno R4 (WiFi capable | Powered via USB-C)
+- 1 x Seeed Studio Grove Shield for Arduino Uno R4
+- 3 x Seeed Studio v1.1 Grove Connector Button Module
+- 2 x Seeed Studio v1.3 Grove Connector LED Socket Kit
+- 5 x Grove Connecting Wires
+- 1 x Accelerometer
+- 1 x Gyroscope
+- 3 x DG01D 48:1 Mini DC Gearbox
+- 3 x 10kΩ (Brown, Black, Orange, Gold) Resistors
+- 3 x BC 472J (4700 pF) Ceramic Capacitors
 
 ---
 
-## Demo Instructions
-1. Power the Arduino and motor driver
-2. Gesture Control:
-   - Wrist tilt up → close the gripper
-   - Wrist tilt down → open the gripper
-   - Neutral wrist → hold position
-3. Press Emergency Stop at any time to halt motion
-4. LED indicators show readiness and fault states
+## Demonstration Instructions
+1. Power the Arduino and Motor Driver
+2. Demonstrate Gesture Control:
+   - Wrist Tilt Up → Open The Gripper
+   - Wrist Tilt Down → Close The Gripper
+   - Neutral Wrist → Hold Position
+3. Press Emergency Stop to Halt Grabber
+4. Demonstrate Fault & Ready States via LEDs (Red → Fault | Green → Ready)
 
 ---
 
